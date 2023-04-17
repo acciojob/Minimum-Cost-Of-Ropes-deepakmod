@@ -1,4 +1,6 @@
-let arr=inputText.value.split(",");
+let inputText=document.getElementById("rope-lengths");
+		function calculateMinCost(){
+			let arr=inputText.value.split(",");
 			arr.forEach(function(element,index){
 				arr[index]=Number(element);
 			});
@@ -16,3 +18,4 @@ let arr=inputText.value.split(",");
 			}
 			let div=document.getElementById("result");
 			div.innerText=cost;
+		}
